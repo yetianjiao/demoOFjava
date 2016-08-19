@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.custom.i18n.resources" value="message" />
+
+	<package name="alarm" extends="abstract_struts">
+	
+	   <!-- 灾害预警模板管理 -->
+        <action name="AlarmTemplateMgrListSearch" class="com.xiaoguo.wasp.web.action.alarm.AlarmTemplateMgrAction" method="search">
+            <result name="success">/jsp/alarm/alarmtemplate_list.jsp</result>
+        </action>
+        
+        <action name="AlarmTemplateMgrAddIndex" class="com.xiaoguo.wasp.web.action.alarm.AlarmTemplateMgrAction" method="addIndex">
+            <result name="success">/jsp/alarm/alarmtemplate_add.jsp</result>
+        </action>
+        
+        <action name="AlarmTemplateMgrAdd" class="com.xiaoguo.wasp.web.action.alarm.AlarmTemplateMgrAction" method="add">
+            <result name="success">/jsp/alarm/alarmtemplate_list.jsp</result>
+        </action>
+        
+        <action name="AlarmTemplateMgrEditIndex" class="com.xiaoguo.wasp.web.action.alarm.AlarmTemplateMgrAction" method="editIndex">
+            <result name="success">/jsp/alarm/alarmtemplate_edit.jsp</result>
+        </action>
+
+        <action name="AlarmTemplateMgrEdit" class="com.xiaoguo.wasp.web.action.alarm.AlarmTemplateMgrAction" method="edit">
+            <result name="success">/jsp/alarm/alarmtemplate_list.jsp</result>
+        </action>
+        
+        <action name="AlarmTemplateMgrDelete" class="com.xiaoguo.wasp.web.action.alarm.AlarmTemplateMgrAction" method="delete">
+            <result name="success">/jsp/alarm/alarmtemplate_list.jsp</result>
+        </action>
+        
+        <action name="AlarmTemplateMgrDetail" class="com.xiaoguo.wasp.web.action.alarm.AlarmTemplateMgrAction" method="detail">
+            <result name="success">/jsp/alarm/alarmtemplate_detail.jsp</result>
+        </action> 
+        
+        <!-- 灾害预警管理 -->
+        <action name="AlarmMgrListSearch" class="com.xiaoguo.wasp.web.action.alarm.AlarmMgrAction" method="search">
+            <result name="success">/jsp/alarm/alarm_list.jsp</result>
+        </action>
+        
+        <action name="AlarmMgrAddIndex" class="com.xiaoguo.wasp.web.action.alarm.AlarmMgrAction" method="addIndex">
+            <result name="success">/jsp/alarm/alarm_add.jsp</result>
+        </action>
+        
+        <action name="AlarmMgrAdd" class="com.xiaoguo.wasp.web.action.alarm.AlarmMgrAction" method="add">
+            <result name="success">/jsp/alarm/alarm_list.jsp</result>
+        </action>
+        
+        <action name="AlarmMgrEditIndex" class="com.xiaoguo.wasp.web.action.alarm.AlarmMgrAction" method="editIndex">
+            <result name="success">/jsp/alarm/alarm_edit.jsp</result>
+        </action>
+
+        <action name="AlarmMgrEdit" class="com.xiaoguo.wasp.web.action.alarm.AlarmMgrAction" method="edit">
+            <result name="success">/jsp/alarm/alarm_list.jsp</result>
+        </action>
+        
+        <action name="AlarmMgrDelete" class="com.xiaoguo.wasp.web.action.alarm.AlarmMgrAction" method="delete">
+            <result name="success">/jsp/alarm/alarm_list.jsp</result>
+        </action>
+        
+        <action name="AlarmMgrDetail" class="com.xiaoguo.wasp.web.action.alarm.AlarmMgrAction" method="detail">
+            <result name="success">/jsp/alarm/alarm_detail.jsp</result>
+        </action>
+
+	</package>
+
+
+</struts>
