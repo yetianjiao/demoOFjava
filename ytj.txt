@@ -1,0 +1,5 @@
+这是一个关于git使用的说明
+1、help → install new software → 安装eclipse上的git插件
+2、windows → preference → team → git → 添加github账户
+3、具体使用时候的步骤：
+（1）第一次提交某个项目至仓库
